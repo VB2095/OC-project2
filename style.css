@@ -1,4 +1,9 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
 
 nav{
     display: flex;
@@ -12,4 +17,112 @@ nav ul>li{
 nav ul>li a{
     text-decoration: none;
     padding: 10px;
+}
+
+
+input{
+    padding: 11px;
+    border: solid #ECECEC 1px;
+    margin-right: -5px;
+    border-radius: 6px 6px 0 0;
+    border-right: none;
+}
+
+input:focus{
+    border-color: #DEEBFF ;
+}
+button{
+    border: none;
+    padding: 11px;
+    border-radius: 0 6px 6px 0;
+    background-color: #0065FC;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+}
+.info i{
+    padding: 4px;
+    border: solid #DEEBFF 1px;
+    border-radius: 50%;
+    width: 1em;
+    text-align: center;
+    font-size: 13px;
+    margin-right: 1em;
+    color:#0065FC;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    
+
+}
+footer ul{
+    list-style-type: none;
+}
+
+footer ul>li a{
+    text-decoration: none;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.footer_assistance ul>li a{
+    text-decoration: none;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.footer_hebergements ul>li a{
+    text-decoration: none;
+    padding: 10px;
+    list-style-type: none;
+}
+.cardscontainer{
+    display: flex;
+    justify-content: space-between;
+}
+.result-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+    flex: 0 32%;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    height:fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    
+}
+
+.result-card{
+    margin-bottom: 2%;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    background-color: #FFF;
+    border-radius: 5px;
+   
+    
+}
+
+.result-card p,h2{
+     padding-left: 20px;
+}
+.result-card h2{
+   font-size: 17px;
+}
+.result-card p{
+    font-size: 14px;
+ }
+
+.result-card img{
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
