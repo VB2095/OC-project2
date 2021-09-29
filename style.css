@@ -234,6 +234,12 @@ footer ul>li a{
     order: 2
   }
 
+ .fa-star{
+     color: #d9d9d9;
+ } 
+.rated{
+    color: #0065FC;
+}
   .resultpopular-container{
     background-color: #F2F2F2;
       order: 1
