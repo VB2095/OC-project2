@@ -7,16 +7,36 @@ body{
 }
 
 nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: relative;
     padding-top: 37px;
 }
 .container{
-    max-width: 1920px;
+    max-width: 1314px;
+    margin: auto;
     padding-left: 40px;
     padding-right: 40px;
     margin-bottom: 40px;
+}
+.linkcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.link ul {
+    list-style-type: none;
+}
+.link ul>li{
+    display: inline-block;
+}
+.link ul>li a {
+    text-decoration: none;
 }
 
 .link a{
@@ -24,14 +44,14 @@ nav{
     padding-right: 10px;
     text-decoration: none;
 }
-.link a:nth-child(1){
+/* .link a:nth-child(1){
     border-top: solid #0065FC 2px;
     padding-top: 50px;
 }
 .link a:nth-child(2){
     color: #1F1F1F;
 
-}
+} */
 .subscribe a{
     font-weight: 900;
     text-decoration: none;
@@ -54,6 +74,7 @@ form{
     justify-content: center;
     height: 50px;
     width: 50px;
+    min-width: 50px;
    background-color: #ECECEC;
    border-top-left-radius: 15px;
    border-bottom-left-radius: 15px;
@@ -88,26 +109,34 @@ button{
     font-weight: 600;
     cursor: pointer;
 }
+button::before{
+    content: 'Rechercher';
+}
 
-.filters{
+.filter_container{
     display: flex;
-    align-items: center;
+    align-items: baseline;
     flex-wrap: wrap;
 
 
+}
+.filter_container h2{
+    margin-right: 32px;
 }
 
 .filter{
     display: flex;
     align-items: center;
-    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 12px;
     height: 45px;
     border: 1px solid #d9d9d9;
     width: fit-content;
    border-radius: 25px;
 }
 .filter p{
- padding: 25px;
+ padding-left: 25px;
+ padding-right: 25px;
  font-weight: 900;
 }
 .iconsfilter{
@@ -118,6 +147,7 @@ button{
     width: 45px;
     border-radius: 50%;
     background-color: #DEEBFF;
+    color:#0065FC
 }
 
 
@@ -205,4 +235,38 @@ footer ul>li a{
     padding: 5px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+
+@media screen and (max-width: 520px ) {
+    .firstlink{
+        position: absolute;
+        top: 70px;
+        right: 50px;
+    }
+    .firstlink ul{
+        width: 100%;
+    }
+    .firstlink ul>li{
+        width: 50%;
+    }
+    
+    .subscribe a{
+        position: absolute;
+        top: 50px;
+        right: 0px;
+    }
+    button{
+        font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 46px;
+    min-width: 46px;
+    }
+    button::before{
+        content: '\f002';
+    }
+    
 }
