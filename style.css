@@ -5,10 +5,6 @@ body {
   margin: 0 auto;
 }
 
-nav {
-  position: relative;
-  padding-top: 37px;
-}
 .container {
   max-width: 1314px;
   margin: auto;
@@ -16,6 +12,42 @@ nav {
   padding-right: 40px;
   margin-bottom: 40px;
 }
+
+.containernav{
+    width: 1314px;
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+.main-nav ul {
+	margin: 1em 0 .5em;
+	text-align: center;
+    padding: 0;
+}
+.main-nav li {
+	display: inline;
+}
+.main-nav a {
+	display: inline-block;
+	padding: .5em 1.5em;
+}
+header .containernav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.containernav img{
+    padding-right: 24px;
+}
+@media (min-width: 768px) {
+	header .containernav {
+		justify-content: space-between;
+        padding: 20px;
+	}
+}
+
 .linkcontainer {
   display: flex;
   align-items: center;
@@ -43,10 +75,10 @@ nav {
   padding-right: 10px;
   text-decoration: none;
 }
-.firstlink a:nth-child(1){
+/* .firstlink a:nth-child(1){
     border-top: solid #0065FC 2px;
     padding-top: 50px;
-}
+} */
 .firstlink a:nth-child(2){
     color: #1F1F1F;
 
@@ -313,6 +345,7 @@ footer ul > li a {
   flex-direction: column;
   align-items: center;
   padding: 5px;
+  width: 235px;
 }
 
 .result-card h2 {
@@ -326,14 +359,12 @@ footer ul > li a {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin: auto;
+  object-fit: cover;
+ width: 100%;
 }
 
 @media screen and (max-width: 520px) {
-  .firstlink {
-    position: absolute;
-    top: 70px;
-    right: 50px;
-  }
+
   .firstlink ul {
     width: 100%;
   }
