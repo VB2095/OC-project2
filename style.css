@@ -13,6 +13,15 @@ body {
   margin-bottom: 40px;
 }
 
+ul>li  a{
+  text-decoration: none;
+}
+.linkactive{
+  color: #0065fc;
+}
+.notactive{
+  color: #d9d9d9;
+}
 .containernav{
     width: 1314px;
     max-width: 100%;
@@ -160,6 +169,14 @@ button::before {
   border: 1px solid #d9d9d9;
   width: fit-content;
   border-radius: 25px;
+  transition: ease-in-out 0.5s;
+  
+}
+
+.filter:hover{
+  background-color: #d9d9d9;
+  cursor: pointer;
+  transition: ease-in-out 0.1s;
 }
 .filter p {
   padding-left: 25px;
