@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Reservia</title>
+    <title>Booki</title>
 </head>
 <body>
     <header>
@@ -74,13 +74,16 @@
             </div>
         </article>
         
-            <div class="info"><i class="fas fa-info"></i>
+            <div class="info">
+                <div class="iconinfo">
+                    <i class="fas fa-info"></i>
+                </div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p></div>
             
         </div>
         
     </section>
-    <section class="cardscontainer container">
+    <section class="cardscontainer">
         <!-- <h1>Hébergements à Marseille</h1> -->
     
             <div class="result-container" id="hebergements">
@@ -88,8 +91,8 @@
                 <div class="result">
                     <a href="#">
                   <div class="card1"><div class="result-card">
-                    <img src="img/cannebiere.jpg" alt="Auberge de la cannebiere" width="235px" height="115px">
-                    <div>
+                    <img src="img/cannebiere.jpg" alt="Auberge de la cannebiere" width="750px" height="500px">
+                    <div class="resultcontent">
                         <h2>Auberge de la Cannebière</h2>
                         <p>Nuit à partir de 25€</p>
                         <i class="fas fa-star rated" ></i>
@@ -102,10 +105,10 @@
             </a>
             <a href="">
                   <div class="card2"><div class="result-card">
-                    <img src="img/hotelduport.jpg" alt="Auberge de la cannebiere" width="235px" height="115px">
-                    <div>
-                        <h2>Auberge de la Cannebière</h2>
-                        <p>Nuit à partir de 25€</p>
+                    <img src="img/hotelduport.jpg" alt="Hotel du port" width="684px" height="456px">
+                    <div class="resultcontent">
+                        <h2>Hôtel du port</h2>
+                        <p>Nuit à partir de 52€</p>
                         <i class="fas fa-star rated" ></i>
                         <i class="fas fa-star rated"></i>
                         <i class="fas fa-star rated"></i>
@@ -117,10 +120,10 @@
             <a href="">
                 <div class="card3">
                     <div class="result-card">
-                    <img src="img/mouettes.jpg" alt="Auberge de la cannebiere" width="235px" height="115px">
-                    <div>
-                        <h2>Auberge de la Cannebière</h2>
-                        <p>Nuit à partir de 25€</p>
+                    <img src="img/mouettes.jpg" alt="Hotel les mouettes" width="750px" height="500px">
+                    <div class="resultcontent">
+                        <h2>Hôtel Les mouettes</h2>
+                        <p>Nuit à partir de 76€</p>
                         <i class="fas fa-star rated" ></i>
                         <i class="fas fa-star rated"></i>
                         <i class="fas fa-star rated"></i>
@@ -132,10 +135,10 @@
             </a>
             <a href="">
                   <div class="card4"><div class="result-card">
-                    <img src="img/hotelmer.jpg" alt="Auberge de la cannebiere" width="235px" height="115px">
-                    <div>
-                        <h2>Auberge de la Cannebière</h2>
-                        <p>Nuit à partir de 25€</p>
+                    <img src="img/hotelmer.jpg" alt="Hotel de la mer" width="500px" height="467px">
+                    <div class="resultcontent">
+                        <h2>Hôtel de la mer</h2>
+                        <p>Nuit à partir de 46€</p>
                         <i class="fas fa-star rated" ></i>
                         <i class="fas fa-star rated"></i>
                         <i class="fas fa-star rated"></i>
@@ -146,10 +149,10 @@
             </a>
                 <a href="">
                   <div class="card5"><div class="result-card">
-                    <img src="img/lepanier.jpg" alt="Auberge de la cannebiere" width="235px" height="115px">
-                   <div>
-                    <h2>Auberge de la Cannebière</h2>
-                    <p>Nuit à partir de 25€</p>
+                    <img src="img/lepanier.jpg" alt="Auberge le panier" width="652px" height="357px">
+                   <div class="resultcontent">
+                    <h2>Auberge Le Panier</h2>
+                    <p>Nuit à partir de 23€</p>
                         <i class="fas fa-star rated"></i>
                         <i class="fas fa-star rated"></i>
                         <i class="fas fa-star rated"></i>
@@ -161,10 +164,10 @@
             </a>
             <a href="">
                   <div class="card6"><div class="result-card">
-                    <img src="img/amina.jpg" alt="Auberge de la cannebiere" width="235px" height="115px">
-                    <div>
-                        <h2>Auberge de la Cannebière</h2>
-                        <p>Nuit à partir de 25€</p>
+                    <img src="img/amina.jpg" alt="Hôtel chez Amina" width="684px" height="456px">
+                    <div class="resultcontent">
+                        <h2>Hôtel chez Amina</h2>
+                        <p>Nuit à partir de 96€</p>
                         <i class="fas fa-star rated" ></i>
                         <i class="fas fa-star rated"></i>
                         <i class="fas fa-star rated"></i>
@@ -174,7 +177,7 @@
                 </div></div>
             </a>
                 </div>
-                <a href="#">Afficher plus</a>
+                <a class="showmore" href="#">Afficher plus</a>
               </div>
                 
             
@@ -183,32 +186,62 @@
         
         
         <aside class="resultpopular-container">
-            <h1>Les plus populaires</h1>
-            <div class="resultpopular-card">
-                <div>
-                    <img src="img/soleildumatin.jpg" width="130" height="133" alt="">
-                    <h2>Hôtel le soleil du matin</h2>
-                    <p>Nuit à partir de 128€</p>
-                </div>
-                
-                
+            <div class="popular-heading">
+                <h2>Les plus populaires</h2>
+                <i class="fas fa-chart-line"></i>
             </div>
-            <div class="resultpopular-card">
-                <div> 
-                    <img src="img/coeurdeleau.jpg" alt="" width="130" height="133">
-                <h2>Hôtel le soleil du matin</h2>
-                <p>Nuit à partir de 128€</p>
-                </div>
+           <a href="#">
+            <div class="popular-card">
                 
+                    <img src="img/soleildumatin.jpg" width="532px" height="355px" alt="Hôtel le soleil du matin">
+                    <div class="popular-card_content">
+                        <h2>Hôtel le soleil du matin</h2>
+                        <p>Nuit à partir de 128€</p>
+                        <div class="stars">
+                            <i class="fas fa-star rated" ></i>
+                            <i class="fas fa-star rated"></i>
+                            <i class="fas fa-star rated"></i>
+                            <i class="fas fa-star rated"></i>
+                            <i class="fas fa-star rated"></i>
+                        </div>
+                    </div>  
             </div>
-            <div class="resultpopular-card">
-                <div>
-                    <img src="img/bleublanc.jpg" alt="" width="130" height="133">
-                    <h2>Hôtel le soleil du matin</h2>
-                    <p>Nuit à partir de 128€</p>
+        </a> 
+            <a href="#">
+            <div class="popular-card">
+                 
+                <img src="img/coeurdeleau.jpg" alt="Au coeur de l'eau" width="504px" height="378px">
+                <div class="popular-card_content">
+                    <h2>Au coeur de l'eau Chambres&nbsp;d'hôtes</h2>
+                    <p>Nuit à partir de 71€</p>
+                    <div class="stars">
+                        <i class="fas fa-star rated" ></i>
+                        <i class="fas fa-star rated"></i>
+                        <i class="fas fa-star rated"></i>
+                        <i class="fas fa-star rated"></i>
+                        <i class="fas fa-star "></i>
+                    </div>
                 </div>
-                
             </div>
+        </a> 
+            <a href="#">
+            <div class="popular-card">
+                
+                    <img src="img/bleublanc.jpg" alt="Hôtel Tout bleu et blanc" width="500px" height="750px">
+                    <div class="popular-card_content">
+                        <h2>Hôtel Tout bleu et blanc</h2>
+                        <p>Nuit à partir de 68€</p>
+                        
+                        <div class="stars">
+                            <i class="fas fa-star rated" ></i>
+                            <i class="fas fa-star rated"></i>
+                            <i class="fas fa-star rated"></i>
+                            <i class="fas fa-star rated"></i>
+                            <i class="fas fa-star "></i>
+                        </div>
+                    </div> 
+            </div>
+        </a> 
         </aside>
     </section>
     <section class="container" id="activites">
@@ -217,8 +250,8 @@
             Grid here
         </div>
     </section>
-    <footer class="container">
-       <div class="footercontainer">
+    <footer>
+       <div class="footercontainer container">
         <div>
             <ul>
                 <h3>A propos</h3>
