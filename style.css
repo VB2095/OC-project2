@@ -431,6 +431,7 @@ justify-content: space-between;
   flex-direction: column;
   justify-content: space-around;
   width: 25%;
+  padding-right: 23px;
 }
 
 .activites-card{
